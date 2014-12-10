@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eat.life.rosario.eatlife" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/manzana"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="eat.life.rosario.eatlife.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="eat.life.rosario.eatlife.ImagesActivity"
+            android:label="@string/title_activity_images"
+            android:parentActivityName="eat.life.rosario.eatlife.MainActivity" >
+        </activity>
+        <activity
+            android:name="eat.life.rosario.eatlife.DietActivity"
+            android:label="@string/title_activity_diet"
+            android:parentActivityName="eat.life.rosario.eatlife.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eat.life.rosario.eatlife.MainActivity" />
+        </activity>
+        <activity
+            android:name="eat.life.rosario.eatlife.CaloriesActivity"
+            android:label="@string/title_activity_calories"
+            android:parentActivityName="eat.life.rosario.eatlife.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eat.life.rosario.eatlife.MainActivity" />
+        </activity>
+        <activity
+            android:name="eat.life.rosario.eatlife.NotesActivity"
+            android:label="@string/title_activity_notes"
+            android:parentActivityName="eat.life.rosario.eatlife.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eat.life.rosario.eatlife.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
